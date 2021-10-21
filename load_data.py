@@ -12,3 +12,29 @@ def fibm(n):
 			return fib(n-1) + fib(n-2)
 	for i in range(n):
 		fibm.append(fib(i))
+
+def Fib_seq(nmax:float) -> list:
+    """
+    creating the Fibonacci sequence up to nmax
+
+    Parameters
+    ----------
+    nmax : float
+        upeer bound of the sequence
+
+    Returns
+    -------
+    list
+        Fibonacci sequence
+
+    """
+    
+    res = [0,1]
+    
+    i = 0
+    while res[i] + res[i+1] <= nmax:
+        res.append(res[i] + res[i+1])
+        i += 1
+        
+    return res
+
