@@ -12,6 +12,8 @@ def fibm(n):
 			return fib(n-1) + fib(n-2)
 	for i in range(n):
 		fibm.append(fib(i))
+	
+	return fibm
 
 def Fib_seq(nmax:float) -> list:
     """
